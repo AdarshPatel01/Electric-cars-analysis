@@ -1,0 +1,114 @@
+:root{
+  --ev-blue:#0b5ed7;
+  --ev-green:#12b886;
+  --ev-dark:#0b1320;
+  --ev-muted:#6c757d;
+  --ev-bg:#f6f9fc;
+}
+
+html,body{
+  height:100%;
+}
+
+body{
+  font-family: system-ui,-apple-system,"Segoe UI",Roboto,Arial,"Noto Sans","Liberation Sans",sans-serif;
+  background: var(--ev-bg);
+  color:#111827;
+}
+
+.navbar{
+  background: linear-gradient(90deg, var(--ev-dark), #0c2b3a);
+}
+
+.navbar .navbar-brand{
+  font-weight:700;
+  letter-spacing:.2px;
+}
+
+.nav-link{
+  font-weight:500;
+}
+
+.nav-link.active{
+  color: var(--ev-green) !important;
+}
+
+.hero{
+  background:
+    radial-gradient(1200px 600px at 10% 10%, rgba(18,184,134,.25), transparent 60%),
+    radial-gradient(1000px 500px at 90% 10%, rgba(11,94,215,.25), transparent 55%),
+    linear-gradient(180deg, #07121c, #0b2533);
+  color:#fff;
+}
+
+.hero .badge{
+  background: rgba(18,184,134,.15);
+  border: 1px solid rgba(18,184,134,.35);
+}
+
+.section-title{
+  font-weight:800;
+  letter-spacing:-.3px;
+}
+
+.card{
+  border: 1px solid rgba(15,23,42,.08);
+  box-shadow: 0 10px 24px rgba(2,6,23,.06);
+  border-radius: 14px;
+}
+
+.icon-pill{
+  width:48px;
+  height:48px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 14px;
+  background: rgba(11,94,215,.08);
+  color: var(--ev-blue);
+}
+
+.kpi{
+  border-left: 4px solid var(--ev-green);
+}
+
+.btn-ev{
+  background: linear-gradient(90deg, var(--ev-blue), var(--ev-green));
+  border: none;
+}
+
+.btn-ev:hover{
+  filter: brightness(1.03);
+}
+
+footer{
+  background: #061018;
+  color: rgba(255,255,255,.85);
+}
+
+footer a{
+  color: rgba(255,255,255,.85);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color:#fff;
+  text-decoration: underline;
+}
+
+.page-header{
+  background: linear-gradient(180deg, #ffffff, #f3f7ff);
+  border-bottom: 1px solid rgba(15,23,42,.06);
+}
+
+.embed-wrap{
+  background:#fff;
+  border: 1px solid rgba(15,23,42,.08);
+  border-radius: 14px;
+  overflow:hidden;
+}
+
+.form-control:focus, .form-select:focus{
+  border-color: rgba(18,184,134,.55);
+  box-shadow: 0 0 0 .25rem rgba(18,184,134,.18);
+}
